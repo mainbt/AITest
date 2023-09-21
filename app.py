@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 CORS(app)
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
 def home():
-    data = request.files['file']
+    #data = request.files['file']
     result = {"result": "helu"}
     return jsonify(result)
 
